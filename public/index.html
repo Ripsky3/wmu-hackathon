@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="bubbles.css">
+    <title>WMU Hackathon</title>
+</head>
+<body class="font-display text-white">
+    
+    <div id="bodybackground" class="fixed bg-downtownnight h-screen w-screen bg-no-repeat bg-cover"></div>
+
+    <div id="landing" class="fixed bg-wmucampus h-screen w-screen bg-no-repeat bg-cover flex flex-col justify-center items-center">
+        <h1 class="landing-title text-6xl">Hackathon</h1>
+        <h1 class="landing-title text-6xl py-10">Western Michigan University</h1>
+        <h1 id="landing-title-date" class="text-6xl">March 1</h1>
+        <button id="landing-registration-button" href="#" class="bg-white text-5xl text-black mt-10 px-10 py-5">Register</button>
+    </div>
+
+    
+    <div id="registration" class="absolute bg-black h-screen w-screen">
+        <button id="registration-exit-button" class="bg-white text-black px-7 py-3">Exit</button>
+        <div class="registration-form-section">
+            <div id="registration-form-section-firstname-label">What's your first name?*</div>
+            <input type="text" id="registration-form-section-firstname-input">
+            <button id="registration-form-section-firstname-button">OK</button>
+        </div>
+        <div class="registration-form-section">
+            <div id="registration-form-section-lastname-label">What's your last name?*</div>
+            <input type="text" id="registration-form-section-lastname-input">
+            <button id="registration-form-section-lastname-button">OK</button>
+        </div>
+        <div class="registration-form-section">
+            <div id="registration-form-section-email-label">What's your email?*</div>
+            <input type="text" id="registration-form-section-email-input">
+            <button id="registration-form-section-email-button">OK</button>
+        </div>
+        
+    </div>
+
+    <div id="main" class="pt-maintop pb-96 px-48 w-screen">
+        <section id="about">
+            <h1 class="title text-6xl pb-maintitle">About</h1>
+            <div class="about-container w-full flex justify-evenly">
+                <div class="bg-wmubroncos bg-no-repeat bg-cover h-96 w-96"></div>
+                <div class="about-description w-300">
+                    <h4 class="about-title text-3xl pb-3">What is the Western Michigan University Hackathon?</h4>
+                    <p class="about-paragraph leading-7">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod laudantium ut deleniti voluptas nulla quidem quis aut rem possimus ipsum nobis veniam tempore, cumque assumenda eveniet voluptatum necessitatibus, magni, optio molestias ratione incidunt. Libero alias ullam saepe nam eaque distinctio est facere, incidunt molestiae exercitationem qui? Optio officia vitae omnis.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="prizes">
+            <div id="prizes-heading">
+                <h1 id="prizes-title" class="text-6xl pt-72">Prizes</h1>
+                <p id="prizes-description" class="about-paragraph" >Hover over a bubble to learn more!</p>
+            </div>
+            <div id="prizes-display">
+                <span style="--i:11;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:15;"></span>
+                <span id="macbook-prize-bubble" class="prize-bubble" style="--i:26;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:12;"></span>
+                <span id="headphones-prize-bubble" class="prize-bubble" style="--i:16;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:27;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:27;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:14;"></span>
+            </div>
+        </section>
+    </div>
+
+
+
+    <script src="./js/scroll.js"></script>
+    <script src="./js/bodybackground.js"></script>
+    <script src="./js/registration.js"></script>
+</body>
+</html>
