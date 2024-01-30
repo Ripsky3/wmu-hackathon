@@ -12,6 +12,7 @@ module.exports = {
       padding: {
         'maintop': '80rem',
         'maintitle': '130px',
+        'bubblesectionpadding': "10rem",
       },
       width: {
         '300': '500px',

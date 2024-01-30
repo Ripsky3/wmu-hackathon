@@ -1,3 +1,6 @@
+body {
+    overflow-x: hidden;
+}
 
 #prizes-display {
     position: relative;
@@ -26,6 +29,16 @@
     z-index: 2;
 }
 
+#prizes-display .prize-bubble h3 {
+    display: none;
+    font-size: 28px;
+    backdrop-filter: blur(10px) saturate(70%);
+}
+
+#prizes-display .prize-bubble:hover {
+    animation-play-state: paused;
+}
+
 #prizes-display #macbook-prize-bubble {
     background: url("./images/prizes/macbook.jpg");
     background-size: cover;
@@ -35,6 +48,12 @@
     background: url("./images/prizes/headphones.jpg");
     background-size: cover;
     left: 500px;
+}
+
+#prizes-display #gamingmouse-prize-bubble {
+    background: url("./images/prizes/gamingmouse.jpg");
+    background-size: cover;
+    left: 1000px;
 }
 
 #prizes-display span:nth-child(even)
@@ -49,7 +68,7 @@
 {
     0%
     {
-        transform: translateY(100vh) scale(0);
+        transform: translateY(90vh) scale(0);
     }
     100%
     {
