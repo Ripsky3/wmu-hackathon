@@ -23,24 +23,21 @@
     </div>
 
     
-    <div id="registration" class="absolute bg-black h-screen w-screen">
+    <div id="registration" class="absolute bg-black h-screen w-screen text-black">
         <button id="registration-exit-button" class="bg-white text-black px-7 py-3">Exit</button>
         <div class="registration-form-section">
-            <div id="registration-form-section-firstname-label">What's your first name?*</div>
-            <input type="text" id="registration-form-section-firstname-input">
-            <button id="registration-form-section-firstname-button">OK</button>
+            <label id="registration-form-section-firstname-label" class="text-white">What's your first name?*</label>
+            <input name="firstname" type="text" id="registration-form-section-firstname-input" class="text-black" autocomplete="off">
         </div>
         <div class="registration-form-section">
-            <div id="registration-form-section-lastname-label">What's your last name?*</div>
-            <input type="text" id="registration-form-section-lastname-input">
-            <button id="registration-form-section-lastname-button">OK</button>
+            <label id="registration-form-section-lastname-label" class="text-white">What's your last name?*</label>
+            <input name="lastname" type="text" id="registration-form-section-lastname-input" class="text-black" autocomplete="off">
         </div>
         <div class="registration-form-section">
-            <div id="registration-form-section-email-label">What's your email?*</div>
-            <input type="text" id="registration-form-section-email-input">
-            <button id="registration-form-section-email-button">OK</button>
+            <label id="registration-form-section-email-label" class="text-white">What's your email?*</label>
+            <input name="email" type="text" id="registration-form-section-email-input" class="text-black" autocomplete="off">
         </div>
-        
+        <button id="registration-form-section-register-button" class="bg-white text-5xl text-black mt-10 px-10 py-5">Register</button>
     </div>
 
     <div id="main" class="pt-maintop pb-96 px-48 w-screen">
