@@ -4,7 +4,9 @@ const registrationFormLastNameInput = document.querySelector("#registration-form
 const registrationFormEmailInput = document.querySelector("#registration-form-section-email-input");
 const registrationFormRegisterButton = document.querySelector("#registration-form-section-register-button");
 
-
+window.onload = () => {
+    registration.style.transform = 'translate(100%)'; // Test test out
+}
 
 registration.style.zIndex = "20";
 registration.style.transform = 'translate(100%)';
