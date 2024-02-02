@@ -8,6 +8,7 @@ module.exports = {
         'downtownnight': "url(./images/downtownnight.jpg)",
         'wmubroncos': "url(./images/wmubroncos.png)",
         'wmucampus': "url(./images/wmucampus.jpg)",
+        'citynight': "url(./images/cn-1.jpg)",
       },
       padding: {
         'maintop': '80rem',
@@ -16,10 +17,14 @@ module.exports = {
       },
       width: {
         '300': '500px',
+        'registration-input': "850px",
+      },
+      colors: {
+        'custom-yellow': "#fff900",
       },
     },
     fontFamily: {
-      display: ["Poppins"],
+      anka: ["AnkaCoderRegular"],
     },
   },
   plugins: [],

@@ -3,13 +3,19 @@ const registrationFormFirstNameInput = document.querySelector("#registration-for
 const registrationFormLastNameInput = document.querySelector("#registration-form-section-lastname-input");
 const registrationFormEmailInput = document.querySelector("#registration-form-section-email-input");
 const registrationFormRegisterButton = document.querySelector("#registration-form-section-register-button");
+const registration = document.querySelector("#registration");
+
+/*window.onbeforeunload = () => {
+    registration.style.transform = 'translate(100%)';
+};*/
 
 window.onload = () => {
+    console.log(registration)
+    registration.style.transform = 'translate(0%)';
     registration.style.transform = 'translate(100%)'; // Test test out
 }
 
 registration.style.zIndex = "20";
-registration.style.transform = 'translate(100%)';
 
 landingRegistrationButton.addEventListener("click", () => {
     registration.style.transition = 'ease-in-out all 1s';

@@ -6,38 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/anka-coder" type="text/css"/>
     <link rel="stylesheet" href="output.css">
-    <link rel="stylesheet" href="bubbles.css">
+    <link rel="stylesheet" href="./cssanimations/arrow.css">
+    <link rel="stylesheet" href="./cssanimations/bubbles.css">
+    <link rel="stylesheet" href="./cssanimations/registerbutton.css">
     <title>WMU Hackathon</title>
 </head>
-<body class="font-display text-white">
+<body class="font-anka text-white">
     
     <div id="bodybackground" class="fixed bg-downtownnight h-screen w-screen bg-no-repeat bg-cover"></div>
 
-    <div id="landing" class="fixed bg-wmucampus h-screen w-screen bg-no-repeat bg-cover flex flex-col justify-center items-center">
-        <h1 class="landing-title text-6xl">Hackathon</h1>
-        <h1 class="landing-title text-6xl py-10">Western Michigan University</h1>
+    <div id="landing" class="fixed bg-citynight h-screen w-screen bg-no-repeat bg-cover flex flex-col justify-center items-center">
+        <h1 id="landing-hackathon-title" class="landing-title text-6xl" data-text="Hackathon...">Hackathon...</h1>
+        <h1 class="blinking-ul landing-title text-6xl py-10">Western Michigan University</h1>
         <h1 id="landing-title-date" class="text-6xl">March 1</h1>
-        <button id="landing-registration-button" href="#" class="bg-white text-5xl text-black mt-10 px-10 py-5">Register</button>
+        <button id="landing-registration-button" href="#" class="bg-blue-500 text-5xl text-white mt-10 px-10 py-5 font-bold -skew-x-12">Register ></button>
+        <button id="landing-registration-button-shadow" href="#" class="relative -z-10 left-3 bottom-28 bg-white text-5xl text-white mt-10 px-10 py-5 font-bold -skew-x-12">Register ></button>
+        <div id="arrow">
+            <span></span>
+            <span></span>
+        </div>
     </div>
 
     
-    <div id="registration" class="absolute bg-black h-screen w-screen text-black">
-        <button id="registration-exit-button" class="bg-white text-black px-7 py-3">Exit</button>
-        <div class="registration-form-section">
-            <label id="registration-form-section-firstname-label" class="text-white">What's your first name?*</label>
-            <input name="firstname" type="text" id="registration-form-section-firstname-input" class="text-black" autocomplete="off">
-        </div>
-        <div class="registration-form-section">
-            <label id="registration-form-section-lastname-label" class="text-white">What's your last name?*</label>
-            <input name="lastname" type="text" id="registration-form-section-lastname-input" class="text-black" autocomplete="off">
-        </div>
-        <div class="registration-form-section">
-            <label id="registration-form-section-email-label" class="text-white">What's your email?*</label>
-            <input name="email" type="text" id="registration-form-section-email-input" class="text-black" autocomplete="off">
-        </div>
-        <button id="registration-form-section-register-button" class="bg-white text-5xl text-black mt-10 px-10 py-5">Register</button>
+    <div id="registration" class="absolute flex justify-start bg-black h-screen w-screen text-black translate-x-full">
+        <button id="registration-exit-button" class="absolute left-0 top-0  text-gray-400 font-bold px-3 py-1 hover:text-gray-50 transition ease-in-out delay-0">x</button>
+        <form class="self-center w-300 ml-96">
+            <div class="registration-form-section flex flex-col">
+                <label id="registration-form-section-firstname-label" class="text-pink-400 text-4xl w-registration-input" data-text="What's your first name?*">What's your first name?*</label>
+                <input name="firstname" type="text" id="registration-form-section-firstname-input" class="text-blue-500 py-3 bg-black placeholder-blue-600 placeholder-opacity-30 text-3xl focus:outline-none border-b-2 border-blue-600 border-opacity-30 focus:border-opacity-100 w-registration-input my-5" autocomplete="off" placeholder="Type your answer here...">
+            </div>
+            <div class="registration-form-section flex flex-col my-10 w-300">
+                <label id="registration-form-section-lastname-label" class="text-pink-400 text-4xl">What's your last name?*</label>
+                <input name="lastname" type="text" id="registration-form-section-lastname-input" class="text-blue-500 py-3 bg-black placeholder-blue-600 placeholder-opacity-30 text-3xl focus:outline-none border-b-2 border-blue-600 border-opacity-30 focus:border-opacity-100 w-registration-input my-5" autocomplete="off" placeholder="Type your answer here...">
+            </div>
+            <div class="registration-form-section flex flex-col">
+                <label id="registration-form-section-email-label" class="text-pink-400 text-4xl">What's your email?*</label>
+                <input name="email" type="text" id="registration-form-section-email-input" class="text-blue-500 py-3 bg-black placeholder-blue-600 placeholder-opacity-30 text-3xl focus:outline-none border-b-2 border-blue-600 border-opacity-30 focus:border-opacity-100 w-registration-input my-5" autocomplete="off" placeholder="Type your answer here...">
+            </div>
+            <button id="registration-form-section-register-button" class="bg-pink-400 text-3xl text-black mt-10 px-5 py-1 hover:bg-pink-300">OK</button>
+        </form>
     </div>
 
     <div id="main" class="pt-maintop pb-96 px-48 w-screen">
