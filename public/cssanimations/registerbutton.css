@@ -14,7 +14,7 @@
 
 #landing-registration-button:hover + #landing-registration-button-shadow {
     padding-right: 5rem;
-    
+    background-color: rgb(244, 114, 182);
 }
 
 .no-transition {

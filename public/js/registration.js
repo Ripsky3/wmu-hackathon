@@ -5,20 +5,15 @@ const registrationFormEmailInput = document.querySelector("#registration-form-se
 const registrationFormRegisterButton = document.querySelector("#registration-form-section-register-button");
 const registration = document.querySelector("#registration");
 
-/*window.onbeforeunload = () => {
-    registration.style.transform = 'translate(100%)';
-};*/
+registration.style.visibility = "hidden";
+registration.style.transition = 'ease-in-out all 1s';
 
 window.onload = () => {
-    console.log(registration)
-    registration.style.transform = 'translate(0%)';
     registration.style.transform = 'translate(100%)'; // Test test out
 }
 
-registration.style.zIndex = "20";
-
 landingRegistrationButton.addEventListener("click", () => {
-    registration.style.transition = 'ease-in-out all 1s';
+    registration.style.visibility = "visible";
     registration.style.transform = 'translate(0%)';
 })
 
