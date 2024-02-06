@@ -689,14 +689,14 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-blue-500 {
+.bg-custom-pink {
   --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  background-color: rgb(254 59 249 / var(--tw-bg-opacity));
 }
 
-.bg-pink-400 {
+.bg-custom-purple {
   --tw-bg-opacity: 1;
-  background-color: rgb(244 114 182 / var(--tw-bg-opacity));
+  background-color: rgb(153 50 204 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -708,8 +708,8 @@ video {
   background-image: url(./images/cn-1.jpg);
 }
 
-.bg-downtownnight {
-  background-image: url(./images/downtownnight.jpg);
+.bg-cyberimage {
+  background-image: url(./images/cyberimage.jpg);
 }
 
 .bg-wmubroncos {
@@ -813,6 +813,11 @@ video {
   line-height: 1;
 }
 
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -835,19 +840,29 @@ video {
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
+.text-custom-purple {
+  --tw-text-opacity: 1;
+  color: rgb(153 50 204 / var(--tw-text-opacity));
+}
+
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.text-pink-400 {
-  --tw-text-opacity: 1;
-  color: rgb(244 114 182 / var(--tw-text-opacity));
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-custom-pink {
+  --tw-text-opacity: 1;
+  color: rgb(254 59 249 / var(--tw-text-opacity));
+}
+
+.text-custom-blue {
+  --tw-text-opacity: 1;
+  color: rgb(24 106 244 / var(--tw-text-opacity));
 }
 
 .placeholder-blue-600::-moz-placeholder {
@@ -860,12 +875,12 @@ video {
   color: rgb(37 99 235 / var(--tw-placeholder-opacity));
 }
 
-.placeholder-opacity-30::-moz-placeholder {
-  --tw-placeholder-opacity: 0.3;
+.placeholder-opacity-50::-moz-placeholder {
+  --tw-placeholder-opacity: 0.5;
 }
 
-.placeholder-opacity-30::placeholder {
-  --tw-placeholder-opacity: 0.3;
+.placeholder-opacity-50::placeholder {
+  --tw-placeholder-opacity: 0.5;
 }
 
 .blur {
@@ -893,9 +908,9 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hover\:bg-pink-300:hover {
+.hover\:bg-custom-highlight-purple:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(249 168 212 / var(--tw-bg-opacity));
+  background-color: rgb(173 104 207 / var(--tw-bg-opacity));
 }
 
 .hover\:text-gray-50:hover {

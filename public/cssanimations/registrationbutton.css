@@ -14,7 +14,7 @@
 
 #landing-registration-button:hover + #landing-registration-button-shadow {
     padding-right: 5rem;
-    background-color: rgb(244, 114, 182);
+    background-color: #797ef6;
 }
 
 .no-transition {
@@ -57,10 +57,10 @@
 
 @keyframes animatearrows {
     0% {
-        color: rgb(244 114 182);
+        color: #797ef6;
     }
 
     50% {
-        color: rgb(244 114 182);
-    }
+        color: #797ef6;
+    } 
 }

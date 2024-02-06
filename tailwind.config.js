@@ -9,6 +9,7 @@ module.exports = {
         'wmubroncos': "url(./images/wmubroncos.png)",
         'wmucampus': "url(./images/wmucampus.jpg)",
         'citynight': "url(./images/cn-1.jpg)",
+        'cyberimage': "url(./images/cyberimage.jpg)",
       },
       padding: {
         'maintop': '80rem',
@@ -21,6 +22,10 @@ module.exports = {
       },
       colors: {
         'custom-yellow': "#fff900",
+        'custom-purple': "#9932cc",
+        'custom-highlight-purple': "rgb(173, 104, 207)",
+        'custom-blue': "#186AF4",
+        'custom-pink': "#FE3BF9",
       },
     },
     fontFamily: {
