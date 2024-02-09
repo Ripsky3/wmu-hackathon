@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: Abang;
+        font-weight: 400;
+        src: url(fonts/Abang.ttf) format('ttf');
+    }
+    @font-face {
+        font-family: Copperplate;
+        font-weight: 700;
+        src: url(fonts/CopperplateRegular.ttf) format('ttf');
+    }
+}
+

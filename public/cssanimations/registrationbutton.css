@@ -1,10 +1,5 @@
-
 #landing-registration-button {
-    transition: ease-in-out .3s all;
-}
-
-#landing-registration-button-shadow {
-    transition: ease-in-out .3s all;
+    box-shadow: 10px 10px #9FDDFF;
 }
 
 #landing-registration-button:hover {
@@ -14,7 +9,7 @@
 
 #landing-registration-button:hover + #landing-registration-button-shadow {
     padding-right: 5rem;
-    background-color: #797ef6;
+    background-color: #9FDDFF;
 }
 
 .no-transition {
@@ -30,13 +25,12 @@
 #landing-registration-button-arrow-shadow-left {
     position: absolute;
     right: 40px;
-    transition: ease-in-out .3s all;
+
 }
 
 #landing-registration-button-arrow-shadow-right {
     position: absolute;
     right: 40px;
-    transition: ease-in-out .3s all;
 }
 
 #landing-registration-button:hover > #landing-registration-button-arrow-shadow-left {
@@ -57,10 +51,10 @@
 
 @keyframes animatearrows {
     0% {
-        color: #797ef6;
+        color: #9FDDFF;
     }
 
     50% {
-        color: #797ef6;
+        color: #9FDDFF;
     } 
 }

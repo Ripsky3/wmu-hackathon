@@ -12,12 +12,12 @@ body {
     position: relative;
     width: 30px;
     height: 30px;
-    background-color: #4fc3dc;
+    background-color: #9FDDFF;
     margin: 0 4px;
     border-radius: 50%;
-    box-shadow: 0 0 0 10px #4fc3dc44,
-    0 0 50px #4fc3dc,
-    0 0 100px #4fc3dc;
+    box-shadow: 0 0 0 10px #9FDDFF44,
+    0 0 50px #9FDDFF,
+    0 0 100px #9FDDFF;
     animation: animate 15s linear infinite;
     animation-duration: calc(125s / var(--i));
 }
@@ -58,10 +58,10 @@ body {
 
 #prizes-display span:nth-child(even)
 {
-    background: #ff2d75;
-    box-shadow: 0 0 0 10px #ff2d7544,
-    0 0 50px #ff2d75,
-    0 0 200px #ff2d75;
+    background: #FE3BF9;
+    box-shadow: 0 0 0 10px #FE3BF944,
+    0 0 50px #FE3BF9,
+    0 0 200px #FE3BF9;
 }
 
 @keyframes animate 

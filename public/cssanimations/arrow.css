@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 700px;
+    top: 720px;
 }
 
 #arrow span {
@@ -29,7 +29,7 @@
         margin-top: 0;
     }
     50% {
-        margin-top: 100px;
+        margin-top: 70px;
     }
     100% {
         margin-top: 0;

@@ -16,6 +16,9 @@ module.exports = {
         'maintitle': '130px',
         'bubblesectionpadding': "10rem",
       },
+      margin: {
+        'maintitle': "125px",
+      },
       width: {
         '300': '500px',
         'registration-input': "850px",
@@ -24,12 +27,15 @@ module.exports = {
         'custom-yellow': "#fff900",
         'custom-purple': "#9932cc",
         'custom-highlight-purple': "rgb(173, 104, 207)",
-        'custom-blue': "#186AF4",
+        'custom-blue': "#9FDDFF",
         'custom-pink': "#FE3BF9",
       },
     },
     fontFamily: {
       anka: ["AnkaCoderRegular"],
+      abang: ['Abang'],
+      poppins: ['Poppins'],
+      proteststrike: ['Protest Strike'],
     },
   },
   plugins: [],
