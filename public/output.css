@@ -445,6 +445,14 @@ video {
 }
 
 @font-face {
+  font-family: AnkaCoderRegular;
+
+  font-weight: 400;
+
+  src: url(fonts/AnkaCoderRegular.ttf) format('ttf');
+}
+
+@font-face {
   font-family: Abang;
 
   font-weight: 400;
@@ -826,6 +834,10 @@ video {
 
 .font-anka {
   font-family: AnkaCoderRegular;
+}
+
+.font-poppins {
+  font-family: Poppins;
 }
 
 .font-proteststrike {

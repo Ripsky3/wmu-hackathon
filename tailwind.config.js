@@ -33,6 +33,7 @@ module.exports = {
     },
     fontFamily: {
       anka: ["AnkaCoderRegular"],
+      poppins: ["Poppins"],
       abang: ['Abang'],
       poppins: ['Poppins'],
       proteststrike: ['Protest Strike'],
