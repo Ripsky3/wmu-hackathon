@@ -612,6 +612,10 @@ video {
   margin-bottom: 3rem;
 }
 
+.ml-80 {
+  margin-left: 20rem;
+}
+
 .ml-96 {
   margin-left: 24rem;
 }
@@ -634,6 +638,10 @@ video {
 
 .hidden {
   display: none;
+}
+
+.h-1 {
+  height: 0.25rem;
 }
 
 .h-screen {
