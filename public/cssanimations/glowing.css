@@ -1,0 +1,81 @@
+/* About title */
+
+#about-title-h {
+    font-size: 220px;
+    position: relative;
+    top: 80px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+}
+
+#about-title-ack {
+    font-size: 50px;
+    position: relative;
+    top: 60px;
+    left: 140px;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+}
+
+#about-title-wmu {
+    font-size: 150px;
+    position: relative;
+    top: 150px;
+    left: 140px;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    text-shadow: 0 0 20px #FE3BF9;
+}
+
+#about-title-mu {
+    font-size: 120px;
+    position: relative;
+    top: 130px;
+    left: 240px;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    rotate: 90deg;
+    letter-spacing: 10px;
+    text-shadow: 0 0 20px #FE3BF9;
+}
+
+#about-title {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    /*8margin: 0;
+    padding: 0 20px;
+    color: #fff;*/
+    text-shadow: 0 0 20px #9FDDFF;
+}
+/*
+#about-title:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+    z-index: -1;
+    color: #9FDDFF;
+    filter: blur(15px);
+}
+
+#about-title:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #9FDDFF;
+    z-index: -2;
+    opacity: 0.5;
+    filter: blur(40px);
+}*/

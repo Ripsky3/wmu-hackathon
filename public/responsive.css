@@ -1,0 +1,171 @@
+:root {
+    touch-action: pan-x pan-y;
+    height: 100% 
+  }
+body {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+#bodybackground{
+    background-position: -50px 0;
+}
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        width: 400px;
+    }
+
+    /* Background images */
+    #landing {
+        background-position: -510px 0;
+    }
+
+    #bodybackground{
+        background-position: -665px 0;
+    }
+
+    /* Landing */
+    #landing-title-div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #landing-hackathon-title {
+        left: 100px;
+        font-size: 42px;
+        font-family: "Anta";
+    }
+
+    #wmu-title-span {
+        left: 100px;
+        font-size: 42px;
+        font-family: "Anta";
+    }
+
+    #landing-title-date {
+        font-size: 42px;
+        font-family: "Anta";
+    }
+
+    #landing-registration-button {
+        font-size: 24px;
+    }
+
+    
+
+    /* Registration */
+    #registration {
+        padding-right: 25px;
+    }
+    #registration-form {
+        margin: 25px;
+        
+    }
+
+    #registration-form input {
+        width: 370px;
+    }
+
+    #registration-form .registration-form-section label {
+        font-size: 30px;
+    }
+
+    /* main */
+    #main {
+        padding-top: 1000px;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    /* Workshop */
+    #workshop .title {
+        padding-bottom: 50px;
+    }
+
+    .workshop-description {
+        padding-left: 0px;
+        padding-top: 50px;
+        width: 375px;
+    }
+
+    #workshop-rsvp-button {
+        margin-top: 20px;
+    }
+
+    /* About */
+
+    .about-container {
+        padding-right: 0px;
+        padding-left: 0px;
+        flex-direction: column;
+        font-family: Anta;
+    }
+
+    #about-title-h {
+        font-size: 162px;
+        left: 0px;
+        font-family: "Anta";
+    }
+    
+    #about-title-ack {
+        font-size: 30px;
+        top: 60px;
+        left: 125px;
+        font-family: "Anta";
+    }
+    
+    #about-title-wmu {
+        font-size: 92px;
+        top: 120px;
+        left: 125px;
+        font-family: "Anta";
+    }
+    
+    #about-title-mu {
+        font-size: 92px;
+        top: 130px;
+        left: 240px;
+        font-family: "Anta";
+    }
+
+    .about-description {
+        padding-left: 0px;
+        padding-top: 300px;
+        width: 375px;
+    }
+
+    /* Bubbles - Prizes */
+    
+    #prizes-display {
+        width: 415px;
+    }
+
+    #prizes-display span {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        margin: 0 1px;
+    }
+
+    #prizes-display .prize-bubble {
+        width: 160px;
+        height: 160px;
+    }
+
+    #prizes-display .prize-bubble h3 {
+        font-size: 18px;
+    }
+
+    #prizes-display #headphones-prize-bubble {
+        background-size: cover;
+        left: 120px;
+    }
+    
+    #prizes-display #gamingmouse-prize-bubble {
+        background-size: cover;
+        left: 210px;
+    }
+    
+}

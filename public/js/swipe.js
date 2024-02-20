@@ -1,24 +1,22 @@
-const landing = document.querySelector("#landing");
+/*const landing = document.querySelector("#landing");
 const landingTitles = document.querySelectorAll(".landing-title");
 const landingTitleDate = document.querySelector("#landing-title-date");
 const landingRegistrationButton = document.querySelector("#landing-registration-button");
 const arrow = document.querySelector("#arrow");
 const landingRegistrationButtonArrowShadowLeft = document.querySelector("#landing-registration-button-arrow-shadow-left");
-const landingRegistrationButtonArrowShadowRight = document.querySelector("#landing-registration-button-arrow-shadow-right");
+const landingRegistrationButtonArrowShadowRight = document.querySelector("#landing-registration-button-arrow-shadow-right");*/
 
 // Variables that will change depending on media query
-let landingTitlesDefaultFontSize = 60;
-let scrollOpacityLength = 862;
-let landingRegistrationButtonFontSize = 48;
-let fontGrowth = 2;
+/*let landingTitlesDefaultFontSize = 60;
+let scrollOpacityLength = 862;*/
 window.onresize = function () {
     checkWindowLengthAndUpdateVariables();
 };
 
 checkWindowLengthAndUpdateVariables();
 
-addEventListener("scroll", (e) => {
-    console.log(1)
+addEventListener("swipe", (e) => {
+    console.log(2)
     e.preventDefault();
     //freezeLandingRegistrationWhenScrolling()
     
@@ -29,10 +27,10 @@ addEventListener("scroll", (e) => {
 
     for (let i = 0; i < landingTitles.length; i++) {
         if (window.pageYOffset <= 130) {
-            landingTitles[i].style.fontSize = (window.pageYOffset / fontGrowth) + landingTitlesDefaultFontSize + "px";
-            landingTitleDate.style.fontSize = (window.pageYOffset / fontGrowth) + landingTitlesDefaultFontSize + "px";
+            landingTitles[i].style.fontSize = (window.pageYOffset / 2) + landingTitlesDefaultFontSize + "px";
+            landingTitleDate.style.fontSize = (window.pageYOffset / 2) + landingTitlesDefaultFontSize + "px";
 
-            landingRegistrationButton.style.fontSize = (window.pageYOffset / fontGrowth) + landingRegistrationButtonFontSize + "px";
+            landingRegistrationButton.style.fontSize = (window.pageYOffset / 2) + 48 + "px";
         }
         landingTitles[i].style.opacity = elementOpacity;
         landingTitleDate.style.opacity = elementOpacity;
@@ -52,12 +50,14 @@ function checkWindowLengthAndUpdateVariables() {
     if (window.innerWidth <= 768) {
         landingTitlesDefaultFontSize = 42;
         scrollOpacityLength = 400;
-        landingRegistrationButtonFontSize = 24;
-        fontGrowth = 3;
     } else {
         landingTitlesDefaultFontSize = 60;
         scrollOpacityLength = 862;
-        landingRegistrationButtonFontSize = 48;
-        fontGrowth = 2;
     }
 }
+
+/* Disable pinch zoom */
+
+document.addEventListener('touchmove', function (event) {
+    if (event.scale !== 1) { event.preventDefault(); }
+  }, false);

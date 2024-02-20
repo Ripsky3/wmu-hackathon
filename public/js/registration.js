@@ -15,10 +15,12 @@ window.onload = () => {
 landingRegistrationButton.addEventListener("click", () => {
     registration.style.visibility = "visible";
     registration.style.transform = 'translate(0%)';
+    document.querySelector("body").style.overflow = "hidden";
 })
 
 registrationExitButton.addEventListener("click", () => {
     registration.style.transform = 'translate(100%)';
+    document.querySelector("body").style.overflowY = "scroll";
 })
 
 registrationFormRegisterButton.addEventListener("click", () => {
@@ -42,3 +44,7 @@ async function registerUser() {
     }).then(res => res.json());
     return response
 }
+
+addEventListener("scroll", (e) => {
+    registration.style.top = window.pageYOffset + "px"; 
+});

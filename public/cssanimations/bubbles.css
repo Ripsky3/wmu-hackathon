@@ -40,18 +40,15 @@ body {
 }
 
 #prizes-display #macbook-prize-bubble {
-    background: url("../images/prizes/macbook.jpg");
     background-size: cover;
 }
 
 #prizes-display #headphones-prize-bubble {
-    background: url("../images/prizes/headphones.jpg");
     background-size: cover;
     left: 500px;
 }
 
 #prizes-display #gamingmouse-prize-bubble {
-    background: url("../images/prizes/gamingmouse.jpg");
     background-size: cover;
     left: 1000px;
 }

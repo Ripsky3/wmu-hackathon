@@ -1,2 +1,3 @@
 const bodyBackground = document.querySelector("#bodybackground");
-bodyBackground.style.zIndex = "-1";
+bodyBackground.style.zIndex = "-20";
+

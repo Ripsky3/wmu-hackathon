@@ -6,10 +6,11 @@ module.exports = {
       backgroundImage: {
         'city-image': "url(./images/city.jpg)",
         'downtownnight': "url(./images/downtownnight.jpg)",
-        'wmubroncos': "url(./images/wmubroncos.png)",
+        'wmubroncos': "url(https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/wmich.sidearmsports.com/images/logo_WMU_Spirit_2022.svg)",
         'wmucampus': "url(./images/wmucampus.jpg)",
         'citynight': "url(./images/cn-1.jpg)",
         'cyberimage': "url(./images/cyberimage.jpg)",
+        "mainbackground": "url(./images/background/backgroundone.jpg)",
       },
       padding: {
         'maintop': '80rem',
@@ -32,12 +33,10 @@ module.exports = {
       },
     },
     fontFamily: {
-      anka: ["AnkaCoderRegular"],
-      poppins: ["Poppins"],
       abang: ['Abang'],
-      poppins: ['Poppins'],
       proteststrike: ['Protest Strike'],
-    },
+      anta: ["Anta"],
+    }
   },
   plugins: [],
 }

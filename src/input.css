@@ -4,9 +4,8 @@
 
 @layer base {
     @font-face {
-        font-family: AnkaCoderRegular;
-        font-weight: 400;
-        src: url(fonts/AnkaCoderRegular.ttf) format('ttf');
+        font-family: AnkaCoder;
+        src: url(fonts/Anka_Coder/AnkaCoder-b.ttf) format('ttf');
     }
     @font-face {
         font-family: Abang;

@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Protest+Strike&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Quicksand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/anka-coder" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="./cssanimations/arrow.css">
     <link rel="stylesheet" href="./cssanimations/bubbles.css">
     <link rel="stylesheet" href="./cssanimations/registrationbutton.css">
     <link rel="stylesheet" href="./cssanimations/glitch.css">
+    <link rel="stylesheet" href="./cssanimations/glowing.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./rsvpbutton.css">
     <title>WMU Hackathon</title>
 </head>
-<body class="font-poppins text-white">
+<body class="font-anta text-white">
     
-    <div id="bodybackground" class="fixed bg-citynight h-screen w-screen bg-no-repeat bg-cover"></div>
+    <div id="body-shade" class="fixed h-screen w-screen bg-no-repeat bg-cover opacity-50 bg-black -z-10"></div>
+    <div id="bodybackground" class="fixed bg-mainbackground h-screen w-screen bg-no-repeat bg-cover -z-20"></div>
 
     <div id="landing" class="fixed bg-cyberimage h-screen w-screen bg-no-repeat bg-cover flex flex-col justify-center items-center">
-      <div class="flex flex-row pr-48">
+      <div id="landing-title-div" class="flex flex-row pr-48">
         <h1 id="landing-hackathon-title" class="landing-title font-abang" data-text="HACK" >HACK</h1>
         <h1 id="wmu-title-span" class="landing-title font-abang" data-text="WMU" >WMU</h1>
       </div>
@@ -33,30 +37,15 @@
         <span>></span>
         <span id="landing-registration-button-arrow-shadow-right">></span>
       </button>
-      <!--<button id="landing-registration-button-shadow" href="#" class="relative -z-10 left-3 bottom-28 bg-white text-5xl text-white mt-10 px-10 py-5 font-proteststrike -skew-x-12"><span class="invisible">Register ></span></button>-->
       <div id="arrow">
         <span class="arrow-span"></span>
         <span class="arrow-span"></span>
       </div>
     </div>
-    <!--
-        <div id="landing" class="fixed bg-citynight h-screen w-screen bg-no-repeat bg-cover flex flex-col justify-center items-center">
-        <h1 id="landing-hackathon-title" class="landing-title text-6xl">Hack W M U</h1>
-        <h1 id="landing-title-date" class="text-6xl">March 1</h1>
-        <button id="landing-registration-button" href="#" class="bg-blue-500 text-5xl text-white mt-10 px-10 py-5 font-extrabold -skew-x-12">
-            Register <span id="landing-registration-button-arrow-shadow-left" >></span> <span>></span> <span id="landing-registration-button-arrow-shadow-right" >></span> 
-        </button>
-        <button id="landing-registration-button-shadow" href="#" class="relative -z-10 left-3 bottom-28 bg-white text-5xl text-white mt-10 px-10 py-5 font-bold -skew-x-12">Register ></button>
-        <div id="arrow">
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-    -->
     
     <div id="registration" class="absolute flex justify-start bg-black h-screen w-screen text-black ">
-        <button id="registration-exit-button" class="absolute left-0 top-0  text-gray-400 font-bold px-3 py-1 hover:text-gray-50 transition ease-in-out delay-0">x</button>
-        <form class="self-center w-300 ml-96">
+        <button id="registration-exit-button" class="absolute left-0 top-0  text-gray-400 font-bold px-5 py-1 hover:text-gray-50 transition ease-in-out delay-0">x</button>
+        <form id="registration-form" class="self-center w-300 ml-96">
             <div class="registration-form-section flex flex-col">
                 <label id="registration-form-section-firstname-label" class="text-custom-pink text-4xl w-registration-input " data-text="What's your first name?*">What's your first name?*</label>
                 <input name="firstname" type="text" id="registration-form-section-firstname-input" class="text-custom-blue py-3 bg-black placeholder-custom-blue placeholder-opacity-50 text-3xl focus:outline-none border-b-2 border-custom-blue border-opacity-30 focus:border-opacity-100 w-registration-input my-5" autocomplete="off" placeholder="Type your answer here...">
@@ -73,14 +62,40 @@
         </form>
     </div>
 
-    <div id="main" class="pt-maintop pb-96 px-48 w-screen">
-        <section id="about">
+    <div id="main" class="pt-maintop pb-96 px-48 w-full">
+
+        <section id="workshop" class="pb-96">
+            <h1 class="title text-6xl pb-maintitle">GSDC WMU HACKATHON WORKSHOP</h1>
+            <div class="about-container w-full flex justify-between items-center px-40">
+                <div class="workshop-description w-300">
+                    <h4 class="about-title text-3xl pb-3">What is the GSDC WMU Hackathon Workshop?</h4>
+                    <p class="about-paragraph leading-7 text-lg">
+                        Gear up for the most thrilling GDSC event this  semester as we deliver a special workshop in preparation for our upcoming HACK WMU event in march. 
+                        This workshop is designed to empower students and participants with the skills and insights needed to excel in the main hackathon.
+                    </p>
+                </div>
+                <a id="workshop-rsvp-button" href="https://gdsc.community.dev/events/details/developer-student-clubs-western-michigan-university-presents-gdsc-wmu-hackathon-workshop/" target="_blank"
+                 class=" bg-custom-pink text-3xl text-white px-10 font-extrabold font-proteststrike -skew-x-12 h-1 py-3 ml-80">
+                    RSVP
+                    <span>></span>
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="">
             <h1 class="title text-6xl pb-maintitle">About</h1>
-            <div class="about-container w-full flex justify-evenly">
-                <div class="bg-wmubroncos bg-no-repeat bg-cover h-96 w-96"></div>
+            <div class="about-container w-full flex justify-between px-40">
+                <div id="about-title" class="font-abang">
+                    <h1 id="about-title-h" class="" data-text="H">H</h1>
+                    <h1 id="about-title-ack" class="" data-text="ack">ack</h1>
+                    <h1 id="about-title-wmu" class="" data-text="WMU">WMU</h1>
+                </div>
                 <div class="about-description w-300">
                     <h4 class="about-title text-3xl pb-3">What is the Western Michigan University Hackathon?</h4>
-                    <p class="about-paragraph leading-7">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod laudantium ut deleniti voluptas nulla quidem quis aut rem possimus ipsum nobis veniam tempore, cumque assumenda eveniet voluptatum necessitatibus, magni, optio molestias ratione incidunt. Libero alias ullam saepe nam eaque distinctio est facere, incidunt molestiae exercitationem qui? Optio officia vitae omnis.</p>
+                    <p class="about-paragraph leading-7 text-lg">
+                        Hack WMU is a forthcoming hackathon in West Michigan, hosted at Western Michigan University by the Google Developer Student Clubs chapter. 
+                        The event is designed to offer students a creative environment where they can tackle challenges and devise real-world solutions using technology.
+                    </p>
                 </div>
             </div>
         </section>
@@ -88,55 +103,57 @@
         <section id="prizes" class="pb-96">
             <div id="prizes-heading">
                 <h1 id="prizes-title" class="text-6xl pt-72">Prizes</h1>
-                <p id="prizes-description" class="about-paragraph" >( Hover over a bubble to learn more! )</p>
+                <p id="prizes-description" class="about-paragraph" >( Prizes To Be Determined )</p>
             </div>
             <div id="prizes-display">
-                <span style="--i:11;"></span>
-                <span style="--i:15;"></span>
-                <span style="--i:21;"></span>
-                <span style="--i:13;"></span>
-                <span style="--i:15;"></span>
-                <span id="macbook-prize-bubble" class="prize-bubble flex justify-center items-center" style="--i:26;"><h3 class="px-7 py-5">Macbook (1st place)</h3></span>
+                <span class="bubble" style="--i:11;"></span>
+                <span class="bubble" style="--i:15;"></span>
+                <span class="bubble" style="--i:21;"></span>
+                <span class="bubble" style="--i:13;"></span>
+                <span class="bubble" style="--i:15;"></span>
+                <span id="macbook-prize-bubble" class="prize-bubble flex justify-center items-center" style="--i:26;"><h3 class="px-7 py-5">Prizes To Be Determined</h3></span>
+                <span class="bubble" style="--i:12;"></span>
+                <span class="bubble" style="--i:16;"></span>
+                <span class="bubble" style="--i:21;"></span>
+                <span class="bubble" style="--i:14;"></span>
+                <span class="bubble" style="--i:11;"></span>
+                <span class="bubble" style="--i:16;"></span>
+                <span class="bubble" style="--i:21;"></span>
+                <span class="bubble" style="--i:13;"></span>
+                <span class="bubble" style="--i:15;"></span>
+                <span class="bubble" style="--i:26;"></span>
+                <span class="bubble" style="--i:12;"></span>
+                <span id="headphones-prize-bubble" class="prize-bubble flex justify-center items-center" style="--i:16;"><h3 class="px-7 py-5">Prizes To Be Determined</h3></span>
+                <span class="bubble" style="--i:21;"></span>
+                <span class="bubble" style="--i:17;"></span>
+                <span class="bubble" style="--i:27;"></span>
+                <span class="bubble" style="--i:11;"></span>
+                <span class="bubble" style="--i:16;"></span>
+                <span class="bubble" style="--i:13;"></span>
+                <span class="bubble" style="--i:19;"></span>
+                <span class="bubble" style="--i:26;"></span>
                 <span style="--i:12;"></span>
-                <span style="--i:16;"></span>
-                <span style="--i:21;"></span>
-                <span style="--i:14;"></span>
-                <span style="--i:11;"></span>
-                <span style="--i:16;"></span>
-                <span style="--i:21;"></span>
-                <span style="--i:13;"></span>
-                <span style="--i:15;"></span>
-                <span style="--i:26;"></span>
-                <span style="--i:12;"></span>
-                <span id="headphones-prize-bubble" class="prize-bubble flex justify-center items-center" style="--i:16;"><h3 class="px-7 py-5">Headphones (2nd place)</h3></span>
-                <span style="--i:21;"></span>
-                <span style="--i:17;"></span>
-                <span style="--i:27;"></span>
-                <span style="--i:11;"></span>
-                <span style="--i:16;"></span>
-                <span style="--i:13;"></span>
-                <span style="--i:19;"></span>
-                <span style="--i:26;"></span>
-                <span style="--i:12;"></span>
-                <span style="--i:15;"></span>
-                <span style="--i:21;"></span>
-                <span style="--i:17;"></span>
-                <span id="gamingmouse-prize-bubble" class="prize-bubble flex justify-center items-center" style="--i:11;"><h3 class="px-7 py-5">Gaming Mouse (3rd place)</h3></span>
-                <span style="--i:13;"></span>
-                <span style="--i:21;"></span>
-                <span style="--i:27;"></span>
-                <span style="--i:15;"></span>
-                <span style="--i:26;"></span>
-                <span style="--i:22;"></span>
-                <span style="--i:11;"></span>
-                <span style="--i:24;"></span>
-                <span style="--i:14;"></span>
+                <span class="bubble" style="--i:15;"></span>
+                <span class="bubble" style="--i:21;"></span>
+                <span class="bubble" style="--i:17;"></span>
+                <span id="gamingmouse-prize-bubble" class="prize-bubble flex justify-center items-center" style="--i:11;"><h3 class="px-7 py-5">Prizes To Be Determined</h3></span>
+                <span class="bubble" style="--i:13;"></span>
+                <span class="bubble" style="--i:21;"></span>
+                <span class="bubble" style="--i:27;"></span>
+                <span class="bubble" style="--i:15;"></span>
+                <span class="bubble" style="--i:26;"></span>
+                <span class="bubble" style="--i:22;"></span>
+                <span class="bubble" style="--i:11;"></span>
+                <span class="bubble" style="--i:24;"></span>
+                <span class="bubble" style="--i:14;"></span>
             </div>
         </section>
 
+        <!--
         <section id="sponsors">
             <h1 id="sponsors-title" class="text-6xl">Sponsors</h1>
         </section>
+        -->
     </div>
 
 
@@ -145,5 +162,6 @@
     <script src="./js/bodybackground.js"></script>
     <script src="./js/registration.js"></script>
     <script src="./js/bubble.js"></script>
+    
 </body>
 </html>
